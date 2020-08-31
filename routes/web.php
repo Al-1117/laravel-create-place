@@ -19,25 +19,4 @@ Route::get('/', function () {
 
 // Indirizzo route students
 
-Route::get('/students', function () {
-
-  $students = [
-    [
-      'nome' => 'Marco',
-      'cognome' => 'Bianchi',
-    ],
-    [
-      'nome' => 'Giuseppe',
-      'cognome' => 'Verdi',
-    ],
-    [
-      'nome' => 'Leonardo',
-      'cognome' => 'Gialli',
-    ]
-  ];
-
-  return view('students', [
-    'students' => $students,
-  ]);
-
-});
+Route::get('/students', 'StudentController@index');
