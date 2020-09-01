@@ -14,8 +14,9 @@
     @foreach ($students as $student)
 
       <ul>
-        <li> Nome: {{$student['nome']}}</li>
-        <li> Cognome: {{$student['cognome']}}</li>
+        <li> Nome: {{$student->nome}}</li>
+        <li> Cognome: {{$student->cognome}}</li>
+        <li> Voto: {{$student->voto}}</li>
       </ul>
     @endforeach
   </div>
