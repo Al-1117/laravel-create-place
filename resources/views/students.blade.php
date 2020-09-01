@@ -17,9 +17,7 @@
         <li> Nome: {{$student['nome']}}</li>
         <li> Cognome: {{$student['cognome']}}</li>
       </ul>
-
     @endforeach
-
   </div>
 
 @endsection
